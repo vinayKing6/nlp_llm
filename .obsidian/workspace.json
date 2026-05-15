@@ -1,0 +1,220 @@
+{
+  "main": {
+    "id": "700a913b2c2def2b",
+    "type": "split",
+    "children": [
+      {
+        "id": "6e0e0737366ba09e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "344eac4384c68e58",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "stanford_cs224N/Lec2 Word Vectors.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Lec2 Word Vectors"
+            }
+          },
+          {
+            "id": "cc373c44461658d8",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "stanford_cs224N/阅读材料/slides/cs224n-2026-lecture02-wordvecs.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "cs224n-2026-lecture02-wordvecs"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ec387c578b827328",
+    "type": "split",
+    "children": [
+      {
+        "id": "e55ccde78ca1e977",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4cf6ef0fb2c98171",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "fba62496801e3da0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "84069f22cb4b0e2b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 225.50152206420898
+  },
+  "right": {
+    "id": "1899fdcc80948f88",
+    "type": "split",
+    "children": [
+      {
+        "id": "3414e55d9a50429f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f6b5794dc3ab0897",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "stanford_cs224N/阅读材料/slides/cs224n-2026-lecture02-wordvecs.pdf",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "cs224n-2026-lecture02-wordvecs 的反向链接列表"
+            }
+          },
+          {
+            "id": "c0a3ee418bfb6478",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "e6b849a3ff879a30",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "205d7482e18e03d1",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "b0ba9b15819af771",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "stanford_cs224N/阅读材料/slides/cs224n-2026-lecture02-wordvecs.pdf",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "cs224n-2026-lecture02-wordvecs 的大纲"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 205.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false,
+      "omnisearch:Omnisearch": false
+    }
+  },
+  "active": "cc373c44461658d8",
+  "lastOpenFiles": [
+    "stanford_cs224N/Lec2 Word Vectors.md",
+    "stanford_cs224N/阅读材料/slides/cs224n-2026-lecture02-wordvecs.pdf",
+    "images/Pasted image 20260514154643.png",
+    "images/Pasted image 20260514144616.png",
+    "images/Pasted image 20260514143705.png",
+    "images",
+    "stanford_cs224N/阅读材料/slides/cs224n-2026-lecture01-history.pdf",
+    "stanford_cs224N/阅读材料/papers",
+    "stanford_cs224N/阅读材料/slides",
+    "stanford_cs224N/Lec1 History of NLP.md",
+    "stanford_cs224N/阅读材料/cs224n-2026-lecture01-history.pdf.crdownload",
+    "stanford_cs224N/阅读材料/slides/cs224n-2026-lecture01-intro.pdf",
+    "stanford_cs224N/阅读材料/cs224n-2026-lecture01-intro.pdf.crdownload",
+    "stanford_cs224N/Introduction.md",
+    "stanford_cs224N/阅读材料/cs224n-2026-lecture02-wordvecs.pdf.crdownload",
+    "stanford_cs224N/阅读材料",
+    "未命名.md",
+    "欢迎.md"
+  ]
+}
