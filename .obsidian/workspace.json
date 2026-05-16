@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6e0e0737366ba09e",
+        "id": "191cd99053000e7d",
         "type": "tabs",
         "children": [
           {
-            "id": "344eac4384c68e58",
+            "id": "d75db45a19454abb",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,33 +20,8 @@
               "icon": "lucide-file",
               "title": "Lec2 Word Vectors"
             }
-          },
-          {
-            "id": "16dcdbe857b9b3f9",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "stanford_cs224N/阅读材料/slides/cs224n_winter2023_lecture1_notes_draft.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "cs224n_winter2023_lecture1_notes_draft"
-            }
-          },
-          {
-            "id": "496e04de7f86f245",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "stanford_cs224N/阅读材料/slides/cs224n-2019-notes02-wordvecs2.pdf"
-              },
-              "icon": "lucide-file-text",
-              "title": "cs224n-2019-notes02-wordvecs2"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -180,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "stanford_cs224N/阅读材料/slides/cs224n_winter2023_lecture1_notes_draft.pdf",
+                "file": "stanford_cs224N/Lec2 Word Vectors.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "cs224n_winter2023_lecture1_notes_draft 的大纲"
+              "title": "Lec2 Word Vectors 的大纲"
             }
           }
         ],
@@ -208,32 +183,35 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "16dcdbe857b9b3f9",
+  "active": "d75db45a19454abb",
   "lastOpenFiles": [
+    "stanford_cs224N/assignments/Assignment1/HW1 Exploring Word Vectors.md",
+    "stanford_cs224N/assignments/Assignment1/README.md",
+    "stanford_cs224N/assignments/Assignment1/imgs/svd.png",
+    "stanford_cs224N/Lec3 Python Review.md",
+    "stanford_cs224N/assignments/Assignment1/imgs/question_2.1.png",
+    "stanford_cs224N/assignments/Assignment1/imgs/question_1.5.png",
+    "stanford_cs224N/assignments/Assignment1/imgs/question_1.4_test.png",
+    "stanford_cs224N/assignments/Assignment1/imgs/inner_product.png",
+    "stanford_cs224N/assignments/Assignment1/imgs",
+    "stanford_cs224N/assignments/Assignment1/exploring_word_vectors.ipynb",
+    "stanford_cs224N/assignments/Assignment1/env.yml",
+    "stanford_cs224N/assignments/Assignment1",
+    "stanford_cs224N/assignments/student",
+    "stanford_cs224N/assignments/a1.zip",
+    "stanford_cs224N/Lec4 Backpropagation and Neural Network Basics.md",
     "stanford_cs224N/Lec2 Word Vectors.md",
-    "stanford_cs224N/阅读材料/slides/cs224n_winter2023_lecture1_notes_draft.pdf",
-    "stanford_cs224N/阅读材料/slides/cs224n-2019-notes02-wordvecs2.pdf",
     "stanford_cs224N/Introduction.md",
+    "stanford_cs224N/阅读材料/slides/2024 CS224N Python Review Session Slides.pptx.pdf",
+    "stanford_cs224N/Lec1 History of NLP.md",
+    "stanford_cs224N/阅读材料/slides/cs224n-2019-notes02-wordvecs2.pdf",
+    "stanford_cs224N/阅读材料/slides/cs224n_winter2023_lecture1_notes_draft.pdf",
     "stanford_cs224N/阅读材料/slides/cs224n-2026-lecture02-wordvecs.pdf",
     "images/Pasted image 20260516154943.png",
     "images/Pasted image 20260516154524.png",
     "images/Pasted image 20260516153817.png",
     "images/Pasted image 20260516153404.png",
     "images/Pasted image 20260516151919.png",
-    "images/Pasted image 20260516151854.png",
-    "stanford_cs224N/阅读材料/slides/cs224n-2019-notes02-wordvecs2.pdf.crdownload",
-    "images/Pasted image 20260515162240.png",
-    "images/Pasted image 20260515154525.png",
-    "stanford_cs224N/Lec1 History of NLP.md",
-    "images/Pasted image 20260515143534.png",
-    "images/Pasted image 20260515143242.png",
-    "stanford_cs224N/assignments",
-    "images",
-    "stanford_cs224N/阅读材料/slides/cs224n-2026-lecture01-history.pdf",
-    "stanford_cs224N/阅读材料/papers",
-    "stanford_cs224N/阅读材料/slides",
-    "stanford_cs224N/阅读材料/cs224n-2026-lecture01-history.pdf.crdownload",
-    "未命名.md",
     "欢迎.md"
   ]
 }

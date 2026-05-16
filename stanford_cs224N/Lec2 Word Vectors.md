@@ -173,9 +173,11 @@ $$v_{\text{tea}} = \begin{bmatrix} 0 \\ 0 \\ 1 \\ \vdots \\ 1 \end{bmatrix} \beg
     
 - `monetary = [0.413, 0.582, −0.007, 0.247, 0.216, −0.718, 0.147, 0.051]`
 
-## Word2vec
+## Skip-gram Word2vec
 
 Word2vec 是一个用于学习词向量的框架（Mikolov 等人，2013）。
+
+原论文： [Efficient Estimation of Word Representations in Vector Space](http://arxiv.org/pdf/1301.3781.pdf) (original word2vec paper)
 
 **核心思想：**
 
@@ -314,7 +316,11 @@ $$P(o|c) = \frac{\exp(u_o^T v_c)}{\sum_{w \in V} \exp(u_w^T v_c)}$$
         theta_grad = evaluate_gradient(J, corpus, theta) # 在整个语料库上计算梯度
         theta = theta - alpha * theta_grad              # 更新参数
     ```
-    
+
+**挑战：自己动手算一遍**
+> 3.4 Working through a gradient
+
+[[cs224n_winter2023_lecture1_notes_draft.pdf#page=10&selection=99,0,103,26|cs224n_winter2023_lecture1_notes_draft, 页面 10]]
 ####  随机梯度下降 (Stochastic Gradient Descent, SGD)
 
 - **问题：** $J(\theta)$ 是语料库中**所有窗口**的函数（可能涉及数十亿个！）。
@@ -338,9 +344,6 @@ $$P(o|c) = \frac{\exp(u_o^T v_c)}{\sum_{w \in V} \exp(u_w^T v_c)}$$
     ```
 
 **小批量梯度下降 (Mini-batch Gradient Descent)**：介于两者之间，每次抽取一小批数据（如 32 或 64 个窗口）进行更新，这是目前深度学习中最常用的做法。
-
-这张图片的翻译与详细解释如下：
-
 ### Word2vec 参数与计算 
 
 **参数矩阵 (Parameters)**
@@ -430,6 +433,9 @@ $$P(o|c) = \frac{\exp(u_o^T v_c)}{\sum_{w \in V} \exp(u_w^T v_c)}$$
         
 - **到目前为止，我们已经解释了原始 Softmax。**
 # Skip-gram 负采样模型
+
+原论文：
+[Distributed Representations of Words and Phrases and their Compositionality](http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf) (negative sampling paper)
 
 - **归一化项的计算代价极高**（当输出类别很多时）：
     
@@ -532,7 +538,7 @@ $$\nabla_{\theta} J_t(\theta) = \begin{bmatrix} 0 \\ \vdots \\ \nabla_{v_{like}}
 
 其实我们也可以规定：只有当单词 $w'$ 出现得更近（比如在几个词之内）时，才算作与 $w$ 共现。以下是一个例子，标注了几个相关的共现窗口：
 
-**共现范围越大（例如大窗口或整个文档），产生的表示就越偏向语义甚至主题编码；窗口越短，则越偏向语法编码。
+**共现范围越大（例如大窗口或整个文档），产生的表示就越偏向语义甚至主题编码；窗口越短，则越偏向语法编码。**
 
 `“It’s hot and delicious. [I poured [the tea]窗口1 for]窗口3 my uncle.]文档”`
 
@@ -573,6 +579,7 @@ $$\nabla_{\theta} J_t(\theta) = \begin{bmatrix} 0 \\ \vdots \\ \nabla_{v_{like}}
     
 - 这种矩阵记录了词汇一起出现的频率。
 
+设 $X$ 表示**词-词共现矩阵（word-word co-occurrence matrix）**，其中 $X_{ij}$ 表示单词 $j$ 出现在单词 $i$ 的上下文中的次数。设 $X_i = \sum_k X_{ik}$ 为任意单词 $k$ 出现在单词 $i$ 上下文中的总次数。最后，设 $P_{ij} = P(w_j|w_i) = \frac{X_{ij}}{X_i}$ 为单词 $j$ 出现在单词 $i$ 上下文中的概率。填充这个矩阵需要对整个语料库进行一次完整的扫描以收集统计数据。对于大规模语料库，这一步的计算开销可能非常大，但这是一次性的前期成本（up-front cost）。
 
 **共现向量的特性与改进**
 
@@ -648,6 +655,11 @@ $$X = U \Sigma V^T$$
 - **发现：** 连接动作与执行者的向量在空间中几乎是**平行且长度相等**的。这意味着模型自动学习到了某种语义规律（如“执行者”这一概念）。
 
 # GloVe (Global Vectors for Word Representation)
+
+原论文：
+GloVe: Global Vectors for Word Representation](http://nlp.stanford.edu/pubs/glove.pdf) (original GloVe paper)
+
+GloVe 模型由一个加权最小二乘模型（Weighted Least Squares Model）组成，它通过对全局词-词共现计数进行训练，从而有效地利用了统计信息。该模型生成了一个具有显著子结构（meaningful sub-structure）的词向量空间。它在词类比任务上表现出了顶尖水平（state-of-the-art），并在多个单词相似度任务中优于其他方法。
 
 ![[Pasted image 20260516151919.png]]
 这份幻灯片展示的是 **GloVe (Global Vectors)** 词嵌入模型的核心数学推导。它的核心目标是：**通过词向量的线性运算（加减法），来捕捉语料库中的统计规律。**
@@ -818,3 +830,31 @@ $$d = \arg \max_i \frac{(x_b - x_a + x_c)^T x_i}{\|x_b - x_a + x_c\|}$$
     - **GloVe 的表现**：在 Dev（开发集）、ACE 和 MUC7（标准测试集）上，GloVe 的准确率基本都是最高的（加粗部分）。
         
     - **Winning!**：这印证了之前说的——如果你换了一套词向量（换成 GloVe），下游任务（NER）的准确率提升了，那就证明这个词向量是真的好。
+
+# 总结
+
+总的来说，这一节还是蛮难的，不过在gimini的帮助下还是搞懂了大概！
+
+在这节课程的学习中，主要掌握了以下核心内容：
+
+- **词义表示的演变**：学习了从传统的 **WordNet**（基于人工定义的同义词库）和 **one-hot 编码**（离散且正交的向量）向现代**分布式语义学**的跨越。
+    
+- **分布语义学核心思想**：理解了“观其伴而知其义” ($You\ shall\ know\ a\ word\ by\ the\ company\ it\ keeps$)，即一个词的含义是由经常出现在其附近的上下文词决定的。
+    
+- **Word2vec 框架**：深入探讨了 **Skip-gram** 模型，学习了如何通过中心词预测上下文词，并利用 **Softmax** 函数将向量点积转化为概率分布。
+    
+- **训练与优化技巧**：掌握了如何通过负采样（Negative Sampling）解决原始 Softmax 计算量过大的问题，并理解了梯度下降（SGD）在更新稀疏词向量矩阵中的应用。
+    
+- **GloVe 模型**：学习了这种基于**全局词-词共现矩阵**的加权最小二乘模型，它结合了全局统计信息与词向量的线性子结构（如 $w_{king} - w_{man} + w_{woman} \approx w_{queen}$）。
+    
+- **评估与可视化**：了解了如何通过**内部评价**（词类比、词义相似度）和**外部评价**（如 NER 命名实体识别）来衡量词向量的质量，并学习了如何通过降维技术可视化词向量空间中的语义聚类。
+
+挑战！阅读原论文：
+1. [Efficient Estimation of Word Representations in Vector Space](http://arxiv.org/pdf/1301.3781.pdf) (original word2vec paper)
+2. [Distributed Representations of Words and Phrases and their Compositionality](http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf) (negative sampling paper)
+3. [GloVe: Global Vectors for Word Representation](http://nlp.stanford.edu/pubs/glove.pdf) (original GloVe paper)
+
+# Homework
+[[HW1 Exploring Word Vectors]]
+# NEXT
+[[Lec4 Backpropagation and Neural Network Basics]]
