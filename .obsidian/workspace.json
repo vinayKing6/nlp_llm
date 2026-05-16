@@ -22,15 +22,27 @@
             }
           },
           {
-            "id": "cc373c44461658d8",
+            "id": "16dcdbe857b9b3f9",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "stanford_cs224N/阅读材料/slides/cs224n-2026-lecture02-wordvecs.pdf"
+                "file": "stanford_cs224N/阅读材料/slides/cs224n_winter2023_lecture1_notes_draft.pdf"
               },
               "icon": "lucide-file-text",
-              "title": "cs224n-2026-lecture02-wordvecs"
+              "title": "cs224n_winter2023_lecture1_notes_draft"
+            }
+          },
+          {
+            "id": "496e04de7f86f245",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "stanford_cs224N/阅读材料/slides/cs224n-2019-notes02-wordvecs2.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "cs224n-2019-notes02-wordvecs2"
             }
           }
         ],
@@ -168,13 +180,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "stanford_cs224N/阅读材料/slides/cs224n-2026-lecture02-wordvecs.pdf",
+                "file": "stanford_cs224N/阅读材料/slides/cs224n_winter2023_lecture1_notes_draft.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "cs224n-2026-lecture02-wordvecs 的大纲"
+              "title": "cs224n_winter2023_lecture1_notes_draft 的大纲"
             }
           }
         ],
@@ -196,24 +208,31 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "cc373c44461658d8",
+  "active": "16dcdbe857b9b3f9",
   "lastOpenFiles": [
     "stanford_cs224N/Lec2 Word Vectors.md",
+    "stanford_cs224N/阅读材料/slides/cs224n_winter2023_lecture1_notes_draft.pdf",
+    "stanford_cs224N/阅读材料/slides/cs224n-2019-notes02-wordvecs2.pdf",
+    "stanford_cs224N/Introduction.md",
     "stanford_cs224N/阅读材料/slides/cs224n-2026-lecture02-wordvecs.pdf",
-    "images/Pasted image 20260514154643.png",
-    "images/Pasted image 20260514144616.png",
-    "images/Pasted image 20260514143705.png",
+    "images/Pasted image 20260516154943.png",
+    "images/Pasted image 20260516154524.png",
+    "images/Pasted image 20260516153817.png",
+    "images/Pasted image 20260516153404.png",
+    "images/Pasted image 20260516151919.png",
+    "images/Pasted image 20260516151854.png",
+    "stanford_cs224N/阅读材料/slides/cs224n-2019-notes02-wordvecs2.pdf.crdownload",
+    "images/Pasted image 20260515162240.png",
+    "images/Pasted image 20260515154525.png",
+    "stanford_cs224N/Lec1 History of NLP.md",
+    "images/Pasted image 20260515143534.png",
+    "images/Pasted image 20260515143242.png",
+    "stanford_cs224N/assignments",
     "images",
     "stanford_cs224N/阅读材料/slides/cs224n-2026-lecture01-history.pdf",
     "stanford_cs224N/阅读材料/papers",
     "stanford_cs224N/阅读材料/slides",
-    "stanford_cs224N/Lec1 History of NLP.md",
     "stanford_cs224N/阅读材料/cs224n-2026-lecture01-history.pdf.crdownload",
-    "stanford_cs224N/阅读材料/slides/cs224n-2026-lecture01-intro.pdf",
-    "stanford_cs224N/阅读材料/cs224n-2026-lecture01-intro.pdf.crdownload",
-    "stanford_cs224N/Introduction.md",
-    "stanford_cs224N/阅读材料/cs224n-2026-lecture02-wordvecs.pdf.crdownload",
-    "stanford_cs224N/阅读材料",
     "未命名.md",
     "欢迎.md"
   ]
